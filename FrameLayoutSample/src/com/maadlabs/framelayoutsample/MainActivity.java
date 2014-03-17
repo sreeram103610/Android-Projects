@@ -16,11 +16,11 @@ import android.widget.ListView;
 
 public class MainActivity extends Activity {
 
+	String[] options = {"Option-1", "Option-2", "Option-3"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String[] options = {"Option-1", "Option-2", "Option-3"};
         ArrayAdapter<String> adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_multiple_choice, options);
         final ListView listView = (ListView) findViewById(R.id.dashBoardOptions);
         listView.setAdapter(adapter);
