@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    tools:context=".MainActivity" >
+  
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView 
+            android:text="Hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    
+	<fragment
+	    android:id="@+id/dashBoard"
+	    android:layout_width="200sp"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="right"
+	    android:background="@drawable/transparent_background"
+	    class="com.maadlabs.peepsync.DashBoardFragment"/>
+
+</FrameLayout>
